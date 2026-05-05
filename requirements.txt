@@ -1,0 +1,22 @@
+# Core
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-openai==0.3.16
+langchain-chroma==0.2.4
+langchain-experimental==0.3.4
+
+# Graph RAG
+neo4j==5.28.1
+
+# Vector store
+chromadb==1.0.9
+
+# Evaluation
+ragas==0.2.15
+datasets==3.6.0
+
+# Utils
+python-dotenv==1.0.1
+pandas==2.2.3
+matplotlib==3.10.1
+seaborn==0.13.2

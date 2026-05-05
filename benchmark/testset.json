@@ -1,0 +1,142 @@
+[
+  {
+    "id": "q01",
+    "question": "Who is the CEO of the company that was founded by the co-founder of High-Flyer?",
+    "ground_truth": "Liang Wenfeng is the CEO of DeepSeek. Liang Wenfeng co-founded High-Flyer and also founded DeepSeek, serving as CEO of both companies.",
+    "category": "3-hop",
+    "path": "High-Flyer <- FOUNDED_BY -> Liang Wenfeng -> FOUNDED -> DeepSeek -> CEO_OF -> Liang Wenfeng"
+  },
+  {
+    "id": "q02",
+    "question": "What technology does the company funded by High-Flyer use to train its AI models?",
+    "ground_truth": "DeepSeek, which is funded by High-Flyer, uses Mixture of Experts (MoE) technology to train its models.",
+    "category": "3-hop",
+    "path": "High-Flyer -> FUNDS -> DeepSeek -> USES_TECHNOLOGY -> Mixture of Experts (MoE)"
+  },
+  {
+    "id": "q03",
+    "question": "Which model is comparable to the flagship AI model developed by the company that High-Flyer owns?",
+    "ground_truth": "DeepSeek-R1, developed by DeepSeek (owned by High-Flyer), is comparable to OpenAI's GPT-4.",
+    "category": "3-hop",
+    "path": "High-Flyer -> OWNS -> DeepSeek -> DEVELOPED -> DeepSeek-R1 -> COMPARABLE_TO -> OpenAI's GPT-4"
+  },
+  {
+    "id": "q04",
+    "question": "Who invested in the company where Dario Amodei worked before he co-founded Anthropic?",
+    "ground_truth": "Dario Amodei worked at OpenAI before co-founding Anthropic. Microsoft invested over $13 billion into OpenAI.",
+    "category": "3-hop",
+    "path": "Dario Amodei -> WORKED_AT -> OpenAI <- INVESTED_IN <- Microsoft"
+  },
+  {
+    "id": "q05",
+    "question": "What model was developed by the company that the founders of Anthropic previously worked at?",
+    "ground_truth": "Dario Amodei and Daniela Amodei previously worked at OpenAI before founding Anthropic. OpenAI developed GPT, ChatGPT, DALL-E, Sora, and O1.",
+    "category": "3-hop",
+    "path": "Anthropic <- FOUNDED_BY <- Dario Amodei -> WORKS_AT -> OpenAI -> DEVELOPED -> GPT/ChatGPT"
+  },
+  {
+    "id": "q06",
+    "question": "Who is the CEO of the organization where the founders of Anthropic used to work?",
+    "ground_truth": "The founders of Anthropic, Dario Amodei and Daniela Amodei, previously worked at OpenAI. Sam Altman is the CEO of OpenAI.",
+    "category": "3-hop",
+    "path": "Anthropic <- FOUNDED_BY <- Dario Amodei -> WORKS_AT -> OpenAI <- CEO_OF <- Sam Altman"
+  },
+  {
+    "id": "q07",
+    "question": "What model did the subsidiary of Alphabet Inc. develop that defeated a Go world champion?",
+    "ground_truth": "DeepMind Technologies Limited, a subsidiary of Alphabet Inc., developed AlphaGo, which beat Lee Sedol, a Go world champion, in 2016.",
+    "category": "3-hop",
+    "path": "Alphabet Inc. -> OWNS -> DeepMind Technologies Limited -> DEVELOPED -> AlphaGo -> COMPETED_WITH -> Lee Sedol"
+  },
+  {
+    "id": "q08",
+    "question": "What AI model for protein folding was created by the company that Google acquired in 2014?",
+    "ground_truth": "Google acquired DeepMind Technologies Limited in 2014. DeepMind developed AlphaFold, a model that made breakthroughs in protein folding in 2020.",
+    "category": "3-hop",
+    "path": "Google -> ACQUIRED -> DeepMind Technologies Limited -> DEVELOPED -> AlphaFold"
+  },
+  {
+    "id": "q09",
+    "question": "Who founded the company that wholly owns xAI?",
+    "ground_truth": "xAI is wholly owned by SpaceX. SpaceX was founded by Elon Musk, who also founded xAI.",
+    "category": "2-hop",
+    "path": "xAI -> OWNED_BY -> SpaceX <- FOUNDED_BY <- Elon Musk"
+  },
+  {
+    "id": "q10",
+    "question": "What AI chatbot was developed by the company that Elon Musk founded and that SpaceX owns?",
+    "ground_truth": "Elon Musk founded xAI, which is owned by SpaceX. xAI developed Grok, a generative AI chatbot.",
+    "category": "3-hop",
+    "path": "Elon Musk -> FOUNDED -> xAI <- OWNED_BY -> SpaceX; xAI -> DEVELOPED -> Grok"
+  },
+  {
+    "id": "q11",
+    "question": "What model family does the company owned by Alphabet Inc. develop?",
+    "ground_truth": "Alphabet Inc. owns Google DeepMind (originally DeepMind Technologies Limited). Google DeepMind develops the Gemini family of large language models.",
+    "category": "2-hop",
+    "path": "Alphabet Inc. -> OWNS -> Google DeepMind -> DEVELOPED -> Gemini"
+  },
+  {
+    "id": "q12",
+    "question": "Which company invested in the organization whose former employees founded Anthropic?",
+    "ground_truth": "Anthropic was founded by former members of OpenAI, including Dario Amodei and Daniela Amodei. Microsoft invested over $13 billion into OpenAI.",
+    "category": "3-hop",
+    "path": "Anthropic <- FOUNDED_BY <- Dario Amodei -> WORKS_AT -> OpenAI <- INVESTED_IN <- Microsoft"
+  },
+  {
+    "id": "q13",
+    "question": "What is the relationship between DeepSeek-R1 and the models made by the company that Microsoft invested in?",
+    "ground_truth": "Microsoft invested in OpenAI. DeepSeek-R1 is comparable to OpenAI's GPT-4 and O1, both developed by OpenAI.",
+    "category": "3-hop",
+    "path": "Microsoft -> INVESTED_IN -> OpenAI -> DEVELOPED -> GPT-4/O1 <- COMPARABLE_TO <- DeepSeek-R1"
+  },
+  {
+    "id": "q14",
+    "question": "What model did the company develop that is comparable to the flagship model of the company owned by High-Flyer?",
+    "ground_truth": "High-Flyer owns DeepSeek. DeepSeek's flagship model is DeepSeek-R1. DeepSeek-R1 is comparable to OpenAI's GPT-4, which was developed by OpenAI.",
+    "category": "3-hop",
+    "path": "High-Flyer -> OWNS -> DeepSeek -> DEVELOPED -> DeepSeek-R1 -> COMPARABLE_TO -> OpenAI's GPT-4 <- DEVELOPED_BY <- OpenAI"
+  },
+  {
+    "id": "q15",
+    "question": "What model did Meta's AI division develop that is comparable to DeepSeek V3?",
+    "ground_truth": "Meta AI, the research division of Meta Platforms, developed Meta's Llama 3.1. DeepSeek V3 used approximately one-tenth the computing power of Meta's Llama 3.1.",
+    "category": "3-hop",
+    "path": "Meta -> OWNS -> Meta AI -> DEVELOPED -> Meta's Llama 3.1 <- COMPARABLE_TO <- DeepSeek V3"
+  },
+  {
+    "id": "q16",
+    "question": "What AI model did the research division of the company formerly known as Facebook develop?",
+    "ground_truth": "Facebook rebranded to Meta Platforms in 2021. Meta's AI research division, Meta AI, developed Meta's Llama 3.1.",
+    "category": "3-hop",
+    "path": "Facebook Inc. -> REBRANDED_TO -> Meta Platforms -> OWNS -> Meta AI -> DEVELOPED -> Meta's Llama 3.1"
+  },
+  {
+    "id": "q17",
+    "question": "Who are the founders of the company that developed Claude, and which organization did they leave to start it?",
+    "ground_truth": "Anthropic, the company that developed Claude, was founded by Dario Amodei and Daniela Amodei. They left OpenAI to found Anthropic in 2021.",
+    "category": "2-hop",
+    "path": "Claude <- DEVELOPED_BY <- Anthropic <- FOUNDED_BY <- Dario Amodei/Daniela Amodei -> WORKED_AT -> OpenAI"
+  },
+  {
+    "id": "q18",
+    "question": "Which company originally developed the AI lab that later became responsible for creating the Gemini model?",
+    "ground_truth": "DeepMind Technologies Limited was acquired by Google in 2014 and merged with Google Brain to become Google DeepMind in 2023. Google DeepMind is responsible for developing Gemini.",
+    "category": "3-hop",
+    "path": "Gemini <- DEVELOPED_BY <- Google DeepMind <- FORMED_FROM <- DeepMind Technologies Limited <- ACQUIRED_BY <- Google"
+  },
+  {
+    "id": "q19",
+    "question": "What technology does the company use that was founded by the person who also founded the company that owns xAI?",
+    "ground_truth": "Elon Musk founded both xAI and SpaceX (which owns xAI). xAI uses artificial intelligence technology and developed Grok.",
+    "category": "3-hop",
+    "path": "Elon Musk -> FOUNDED -> SpaceX -> OWNS -> xAI -> USES_TECHNOLOGY -> Artificial Intelligence"
+  },
+  {
+    "id": "q20",
+    "question": "What model comparable to OpenAI's GPT-4 was developed by the company whose founder also leads the hedge fund that owns it?",
+    "ground_truth": "DeepSeek, owned by High-Flyer, was founded by Liang Wenfeng who is also CEO of High-Flyer. DeepSeek developed DeepSeek-R1, which is comparable to OpenAI's GPT-4.",
+    "category": "3-hop",
+    "path": "High-Flyer -> OWNS -> DeepSeek <- FOUNDED_BY <- Liang Wenfeng -> CEO_OF -> High-Flyer; DeepSeek -> DEVELOPED -> DeepSeek-R1 -> COMPARABLE_TO -> OpenAI's GPT-4"
+  }
+]
